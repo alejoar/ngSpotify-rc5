@@ -8,6 +8,7 @@ import { NavbarComponent } from './components/navbar/navbar.component'
 import { AboutComponent } from './components/about/about.component'
 import { SearchComponent } from './components/search/search.component'
 import { ArtistComponent } from './components/artist/artist.component'
+import { AlbumComponent } from './components/album/album.component';
 
 import { routing } from './app.routes';
 
@@ -25,7 +26,8 @@ import { SpotifyService } from './services/spotify.service';
     NavbarComponent,
     SearchComponent,
     AboutComponent,
-    ArtistComponent
+    ArtistComponent,
+    AlbumComponent
   ],
   providers: [
     SpotifyService

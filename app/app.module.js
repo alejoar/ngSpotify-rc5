@@ -17,6 +17,7 @@ var navbar_component_1 = require('./components/navbar/navbar.component');
 var about_component_1 = require('./components/about/about.component');
 var search_component_1 = require('./components/search/search.component');
 var artist_component_1 = require('./components/artist/artist.component');
+var album_component_1 = require('./components/album/album.component');
 var app_routes_1 = require('./app.routes');
 var spotify_service_1 = require('./services/spotify.service');
 var AppModule = (function () {
@@ -35,7 +36,8 @@ var AppModule = (function () {
                 navbar_component_1.NavbarComponent,
                 search_component_1.SearchComponent,
                 about_component_1.AboutComponent,
-                artist_component_1.ArtistComponent
+                artist_component_1.ArtistComponent,
+                album_component_1.AlbumComponent
             ],
             providers: [
                 spotify_service_1.SpotifyService
