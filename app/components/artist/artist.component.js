@@ -25,6 +25,10 @@ var ArtistComponent = (function () {
                 .subscribe(function (artist) {
                 _this.artist = artist;
             });
+            _this._spotifyService.getAlbums(id)
+                .subscribe(function (albums) {
+                _this.albums = albums.items;
+            });
         });
     };
     ArtistComponent = __decorate([

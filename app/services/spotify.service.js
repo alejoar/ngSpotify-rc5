@@ -26,6 +26,11 @@ var SpotifyService = (function () {
         return this._http.get(this.artistUrl)
             .map(function (res) { return res.json(); });
     };
+    SpotifyService.prototype.getAlbums = function (artistId) {
+        this.albumsUrl = 'https://api.spotify.com/v1/artists/' + artistId + '/albums/';
+        return this._http.get(this.albumsUrl)
+            .map(function (res) { return res.json(); });
+    };
     SpotifyService = __decorate([
         core_1.Injectable(), 
         __metadata('design:paramtypes', [http_1.Http])
